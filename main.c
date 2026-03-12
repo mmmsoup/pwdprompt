@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
 					if (tmp[1] == 'C') {
 						// right
 						if (cursorpos < nchars) {
-							write(STDERR, buf+cursorpos, 1);
+							write(STDERR, buf+(buflen*hide)+cursorpos, 1);
 							cursorpos += 1;
 						}
 					} else if (tmp[1] == 'D') {
